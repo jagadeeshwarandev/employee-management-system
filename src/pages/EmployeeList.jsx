@@ -35,7 +35,7 @@ async function confirmDelete()
 useEffect(() => {
 
     // fetch(
-    //     "http://localhost/employee-api/public/employees"
+    //     "https://employee-management-system.great-site.net/employee-api/employee-api/public/employees"
     // )
     // .then(response => response.json())
     // .then(data => {
@@ -62,7 +62,7 @@ useEffect(() => {
 async function fetchEmployees()
 {
     const response = await fetch(
-        "http://localhost/employee-api/public/employees"
+        "https://employee-management-system.great-site.net/employee-api/employee-api/public/employees"
     )
 
     const data = await response.json()
@@ -81,7 +81,7 @@ async function addEmployee()
         return
     }
     const response = await fetch(
-        "http://localhost/employee-api/public/employees",
+        "https://employee-management-system.great-site.net/employee-api/employee-api/public/employees",
         {
             method: "POST",
             headers: {
@@ -104,7 +104,7 @@ async function addEmployee()
 async function deleteEmployee(id)
 {
     await fetch(
-        `http://localhost/employee-api/public/employees/${id}`,
+        `https://employee-management-system.great-site.net/employee-api/employee-api/public/employees/${id}`,
         {
             method: "DELETE"
         }
@@ -125,7 +125,7 @@ async function deleteEmployee(id)
 async function updateEmployee()
 {
     await fetch(
-        `http://localhost/employee-api/public/employees/${editingId}`,
+        `https://employee-management-system.great-site.net/employee-api/employee-api/public/employees/${editingId}`,
         {
             method: "PUT",
             headers: {
