@@ -5,7 +5,7 @@ export default function Dashboard(){
     const [employees, setEmployees] = useState([])
 useEffect(() => {
 
-    fetch("http://localhost/employee-api/public/employees")
+    fetch("https://employee-management-system.great-site.net/employee-api/employee-api/public/employees")
         .then(response => response.json())
         .then(data => {
             setEmployees(data)
